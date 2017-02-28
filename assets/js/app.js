@@ -94,6 +94,22 @@ var App = function () {
             handleMisc();
             handleSearch();
             handleSwitcher();
+
+        },
+        navActive:function () {
+            $(".nav-collapse").find("li").each(function () {
+                var a = $(this).find("a:first")[0];
+                pn = location.pathname;
+                href = $(a).attr("href");
+                pn = pn.split('/').pop().split('.')[0].split('_')[0];
+                href = href.split('/').pop().split('.')[0].split('_')[0];
+                // alert(pn+'  '+href);
+                if (pn === href) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            });
         },
 
         initSliders: function () {
