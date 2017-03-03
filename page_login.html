@@ -4,7 +4,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Unify | Welcome...</title>
+    <title>MEMS-LAB-SJTU</title>
 
     <!-- Meta -->
     <meta charset="utf-8" />
@@ -27,8 +27,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head> 
 
 <body>
-<!--#include file="cn_header.html" -->
-
+<div id="top"></div>
 <!--=== Top ===-->
 <!--=== End Top ===-->    
 
@@ -70,7 +69,7 @@
                 <p>Copyright &copy; 2017.MEMS-LAB-SJTU All rights reserved.</p>
             </div>
             <div class="span4" style="width:50px; " align="top">
-                <a href="index.shtml"><img id="logo-footer" src="assets/img/logo2.jpg" class="pull-right" alt="" style="width:100%;"/></a>
+                <a href="index.html"><img id="logo-footer" src="assets/img/logo2.jpg" class="pull-right" alt="" style="width:100%;"/></a>
             </div>
         </div><!--/row-fluid-->
     </div><!--/container-->
@@ -91,6 +90,7 @@
     jQuery(document).ready(function() {
         App.init();
         Login.init();
+        App.navActive();
         Login.exam();
     });
 </script>

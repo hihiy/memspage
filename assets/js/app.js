@@ -89,15 +89,20 @@ var App = function () {
 
     return {
         init: function () {
+
             handleBootstrap();
             handleIEFixes();
             handleMisc();
             handleSearch();
             handleSwitcher();
 
+
         },
         navActive:function () {
-            $(".nav-collapse").find("li").each(function () {
+            // alert('1');
+            $("#top").load("cn_header.html",function () {
+                $(".nav-collapse").find("li").each(function () {
+
                 var a = $(this).find("a:first")[0];
                 pn = location.pathname;
                 href = $(a).attr("href");
@@ -110,6 +115,10 @@ var App = function () {
                     $(this).removeClass("active");
                 }
             });
+
+            });
+            // alert('2');
+
         },
 
         initSliders: function () {
