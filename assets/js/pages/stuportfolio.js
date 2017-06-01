@@ -2,7 +2,6 @@
  * Created by yxt on 17/3/5.
  */
 
-
 var phdlist;
 var masterlist;
 var idindex=1;
@@ -10,7 +9,7 @@ var d={'memberType':'1'};
 $.ajax({
     type: 'POST',
     async: false,
-    url: 'http://api.yanxiaotian.com.cn/api/member',
+    url: url_member,
     contentType: 'application/json',
     dataType:'json',
     crossDomain:true,
@@ -33,7 +32,7 @@ var d={'memberType':'2'};
 $.ajax({
     type: 'POST',
     async: false,
-    url: 'http://api.yanxiaotian.com.cn/api/member',
+    url: url_member,
     contentType: 'application/json',
     dataType:'json',
     crossDomain:true,

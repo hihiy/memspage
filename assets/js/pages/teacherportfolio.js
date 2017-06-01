@@ -11,7 +11,7 @@ var d={'memberType':'3'};
 $.ajax({
     type: 'POST',
     async: false,
-    url: 'http://api.yanxiaotian.com.cn/api/member',
+    url: url_member,
     contentType: 'application/json',
     dataType:'json',
     crossDomain:true,
@@ -34,7 +34,7 @@ var d={'memberType':'4'};
 $.ajax({
     type: 'POST',
     async: false,
-    url: 'http://api.yanxiaotian.com.cn/api/member',
+    url: url_member,
     contentType: 'application/json',
     dataType:'json',
     crossDomain:true,
@@ -57,7 +57,7 @@ var d={'memberType':'5'};
 $.ajax({
     type: 'POST',
     async: false,
-    url: 'http://api.yanxiaotian.com.cn/api/member',
+    url: url_member,
     contentType: 'application/json',
     dataType:'json',
     crossDomain:true,

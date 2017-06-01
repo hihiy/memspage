@@ -1,19 +1,22 @@
 /**
  * Created by yxt on 17/2/22.
  */
+
+
 var Login = function () {
 
     function examForm() {
         $('form').submit(function () {
             var $name = $('#name').val();
             var $password = $('#password').val();
-            alert($name+'  '+$password);
             var d = new Object();
             d.email = $name;
             d.password = $password;
+            alert($name+'  '+$password);
             $.ajax({
                 type: 'POST',
-                url: 'http://api.yanxiaotian.com.cn/api/login',
+                async: false,
+                url: url_login,
                 contentType: 'application/json',
                 dataType:'json',
                 crossDomain:true,
